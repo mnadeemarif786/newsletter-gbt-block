@@ -8,7 +8,6 @@
  * Requires PHP: 7.4
  * Text Domain: newsletter-subscription
  */
-// Prevent direct access
 if (!defined('ABSPATH')) exit;
 
 add_action('wp_enqueue_scripts', 'newsletter_enqueue_script');
@@ -85,7 +84,7 @@ function enqueue_newsletter_block_editor_assets() {
     }
 }
 
-// add_action( 'admin_enqueue_scripts', 'enqueue_newsletter_admin_assets' );
+add_action( 'admin_enqueue_scripts', 'enqueue_newsletter_admin_assets' );
 function enqueue_newsletter_admin_assets( $hook ) {
 	plugin_log( $hook );
     if ( $hook !== 'toplevel_page_my-newsletter' ) {

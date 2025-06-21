@@ -1,5 +1,4 @@
 <?php
-// Prevent direct access
 if (!defined('ABSPATH') || !defined('WP_UNINSTALL_PLUGIN')) {
     exit;
 }
