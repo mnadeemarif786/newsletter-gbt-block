@@ -1,0 +1,11 @@
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+  padding: 8px;
+  font-size: 1rem;
+}
